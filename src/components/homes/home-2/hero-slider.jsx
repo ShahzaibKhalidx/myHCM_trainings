@@ -5,9 +5,10 @@ import Slider from "react-slick";
 const slider_data = [
   {
     id: 1,
-    bg_img: "/assets/img/slider/slider-bg-01.jpg",
-    slider_text: "Learn New Skills & Popular Courses",
-    title: "For Every Student, Every Classroom.",
+    bg_img: "/assets/img/slider/1.png",
+    slider_text: "MyHCM training Services",
+    title: "Transforming Today, Empowering Tomorrow.",
+    titleColor: "#f9f9f9",
     total_courses: "3.5k",
     courses_text: "Free Pro Courses",
     students: "235k",
@@ -17,9 +18,10 @@ const slider_data = [
   },
   {
     id: 2,
-    bg_img: "/assets/img/slider/slider-bg-02.jpg",
-    slider_text: "Learn New Skills & Popular Courses",
-    title: "For Every Student, Every Classroom.",
+    bg_img: "/assets/img/slider/3.png",
+    slider_text: "MyHCM training Services",
+    title: "Transforming Today, Empowering Tomorrow.",
+    titleColor: "#f9f9f9",
     total_courses: "3.5k",
     courses_text: "Free Pro Courses",
     students: "235k",
@@ -86,18 +88,18 @@ const HeroSlider = () => {
                           <span className="slider-text mb-15">
                             {item.slider_text}
                           </span>
-                          <h2 className="slider-title mb-65">
+                          <h2 className="slider-title mb-65" style={{ color: item.titleColor, fontSize: "52px" }}>
                             {item.title}
                           </h2>
                           <div className="slider-btn">
-                            <Link className="tp-btn mr-5" href="/course-list">
-                              Explore Courses
+                            <Link className="tp-btn mr-5" href="/subscribe">
+                              Subscribe
                             </Link> {" "}
                             <Link
                               className="tp-s-border-btn"
-                              href="/course-list"
+                              href="#"
                             >
-                              Watch Videos
+                              Know More
                             </Link>
                           </div>
                         </div>

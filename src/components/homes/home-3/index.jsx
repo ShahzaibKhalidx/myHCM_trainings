@@ -6,7 +6,7 @@ import AboutArea from "../../../common/about-area";
 import BannerArea from "./banner-area";
 import BlogArea from "./blog-area";
 import CategoryArea from "./category-area";
-import ChooseArea from "./choose-area";
+import ChooseAreaThree from "./choose-area";
 import CounterArea from "./counter-area";
 import FeatureArea from "../../../common/feature-area";
 import OurCourse from "./our-course";
@@ -22,7 +22,7 @@ const HomeThree = () => {
       <VideoArea style_2={true} />
       <CategoryArea />
       <OurCourse />
-      <ChooseArea />
+      <ChooseAreaThree />
       <TestimonialArea />
       <BrandArea style_3={true} />
       <BlogArea />

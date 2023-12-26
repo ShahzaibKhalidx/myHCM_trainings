@@ -1,47 +1,39 @@
+import Link from "next/link";
 import React from "react";
 
-const footer_data = [
+// footer two content data
+const footer_two_content = [
   {
     id: 1,
     title: "About",
-    cls: "col-xl-2",
-    footer_col: "footer-col-1",
+    cls: "col-xl-3",
+    footer_col: "footer-2-col-2",
+    ml: "ml-90",
     links: [
-      { name: "About Us", link: "/about" },
+      { name: "About Me", link: "/about" },
       { name: "Blog", link: "/blog" },
-      { name: "Careers", link: "/careers" },
-      { name: "Jobs", link: "/" },
+      { name: "Careers", link: "/" },
+      { name: "Jobs", link: "/about" },
       { name: "In Press", link: "/" },
+      { name: "Payments", link: "/" },
     ],
   },
   {
     id: 2,
-    title: "Quick Links",
-    cls: "col-xl-3",
-    footer_col: "footer-col-2",
-    links: [
-      { name: "Refund Policy", link: "/policy" },
-      { name: "Documentation", link: "/documentation" },
-      { name: "Chat online", link: "/chat-online" },
-      { name: "Order Cancel", link: "/order-cancel" },
-      { name: "Privacy Policy", link: "/privacy-policy" },
-    ],
-  },
-  {
-    id: 3,
     title: "Support",
-    footer_col: "footer-col-3",
-    cls: "col-xl-3",
+    cls: "col-xl-2",
+    footer_col: "footer-2-col-3",
+    ml: "",
     links: [
       { name: "Contact us", link: "/contact" },
-      { name: "Online Chat", link: "/online-chat" },
-      { name: "Whatsapp", link: "/whatsapp" },
-      { name: "Telegram", link: "/telegram" },
-      { name: "Ticketing", link: "/ticketing" },
+      { name: "Online Chat", link: "/contact" },
+      { name: "Whatsapp", link: "/" },
+      { name: "Telegram", link: "/" },
+      { name: "In Press", link: "/" },
+      { name: "Ticketing", link: "/" },
     ],
   },
 ];
-
 
 // social_links
 const social_links = [
@@ -72,36 +64,101 @@ const social_links = [
   },
 ];
 
-const copyright = {
-  logo: "/assets/img/logo/logo.png",
-  copyright_text: (
-    <>Copyright © Uxaction {new Date().getFullYear()}, All Rights Reserved</>
-  ),
-};
+// footer bottom data
+const footer_bottom = [
+  { name: "About us", link: "/about" },
+  { name: "Contact", link: "/contact" },
+  { name: "Privacy policy", link: "/" },
+  { name: "Courses", link: "/" },
+  { name: "Terms of Use", link: "/" },
+];
 
-const { logo, copyright_text } = copyright;
-const Footer = () => {
+
+const FooterTwo = () => {
   return (
     <>
       <footer>
         <div
-          className="footer-bg theme-bg bg-bottom"
-          style={{ backgroundImage: `url(/assets/img/bg/shape-bg-02.png)` }}
+          className="footer-bg theme-bg-secondary"
+          style={{ backgroundImage: `url(/assets/img/bg/shape-bg-1.png)` }}
         >
-          <div className="f-border pt-115 pb-70">
+          <div className="f-border-bottom pt-115 pb-60">
             <div className="container">
               <div className="row">
-                {footer_data.map((item) => (
-                  <div key={item.id} className={`${item.cls} col-md-4`}>
-                    <div className={`footer-widget ${item.footer_col} mb-50`}>
+                <div className="col-xl-4 col-lg-4 col-md-6 col-12">
+                  <div className="footer-widget footer-widget-white footer-2-col-1 mb-55">
+                    <div className="footer-widget__text mb-35">
+                      <h3 className="footer-widget__title">
+                        <Link href="/">
+                          <img src="/assets/img/logo/black-f-logo.png"
+                            alt="logo"
+                          />
+                        </Link>
+                      </h3>
+                    </div>
+                    <p>
+                      Dramatically supply transparent deliverab before & you
+                      backward comp internal sources.
+                    </p>
+                    <div className="footer-widget-info-list">
+                      <ul>
+                        <li>
+                          <div className="footer-widget-info d-flex">
+                            <div className="footer-widget-info-icon">
+                              <i className="fi fi-rr-phone-call"></i>
+                            </div>
+                            <div className="footer-widget-info-text ml-10">
+                              <label>Phone</label>
+                              <a href="tel:(505)555-0125">(505) 555-0125</a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="footer-widget-info d-flex">
+                            <div className="footer-widget-info-icon">
+                              <i className="fi fi-rr-envelope"></i>
+                            </div>
+                            <div className="footer-widget-info-text ml-10">
+                              <label>Email</label>
+                              <a href="mailto:Emailmichelle.rivera@example.com">
+                                michelle.rivera@example.com
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="footer-widget-info d-flex align-items-center">
+                            <div className="footer-widget-info-icon">
+                              <i className="fi fi-rr-marker"></i>
+                            </div>
+                            <div className="footer-widget-info-text ml-10">
+                              <label>Address</label>
+                              <a href="#">
+                                3517 W. Gray St. Utica, Pensylvania 567
+                              </a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                {footer_two_content.map((item, i) => (
+                  <div
+                    key={i}
+                    className={`${item.cls} col-lg-2 col-md-6 col-6`}
+                  >
+                    <div
+                      className={`footer-widget footer-widget-white ${item.footer_col} ${item?.ml} mb-55`}
+                    >
                       <div className="footer-widget__text mb-35">
                         <h3 className="footer-widget__title">{item.title}</h3>
                       </div>
                       <div className="footer-widget__link">
                         <ul>
-                          {item.links.map((link, i) => (
+                          {item.links.map((sub_item, i) => (
                             <li key={i}>
-                              <a href="#">{link.name}</a>
+                              <Link href={sub_item.link}>{sub_item.name}</Link>
                             </li>
                           ))}
                         </ul>
@@ -109,29 +166,19 @@ const Footer = () => {
                     </div>
                   </div>
                 ))}
-                <div className="col-xl-4 col-lg-6 col-md-8">
-                  <div className="footer-widget footer-col-4  mb-50">
+
+                <div className="col-xl-3 col-lg-4 col-md-6 col-10">
+                  <div className="footer-widget footer-widget-white footer-2-col-4 ml-30 mb-55">
                     <div className="footer-widget__text mb-35">
-                      <h3 className="footer-widget__title">Support</h3>
+                      <h3 className="footer-widget__title">Social Media</h3>
                     </div>
                     <p>
                       Be the first one to know about discounts, offers and
-                      events. Unsubscribe whenever you like.
+                      events
                     </p>
-                    <div className="footer-widget__f-newsletter mb-40">
-                      <form  onSubmit={(e) => e.preventDefault()}>
-                        <span>
-                          <i className="icon_mail_alt"></i>
-                        </span>
-                        <input type="email" placeholder="Enter your email" />
-                        <button className="footer-widget__submit tp-border-btn2">
-                          Subscribe Now
-                        </button>
-                      </form>
-                    </div>
                     <div className="footer-widget__social d-flex align-items-center">
                       {social_links.map((link, i) => (
-                        <a href={link.link} target={link.target} key={i}>
+                        <a key={i} href={link.link} target={link.target}>
                           <i className={link.icon}></i>
                         </a>
                       ))}
@@ -141,19 +188,25 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="f-copyright pt-60 pb-30">
+          <div className="f-copyright pt-60 pb-60">
             <div className="container">
               <div className="row">
-                <div className="col-md-5">
-                  <div className="f-copyright__logo mb-30">
-                    <a href="#">
-                      <img src={logo} alt="logo" />
-                    </a>
+                <div className="col-lg-4 col-md-4 col-12">
+                  <div className="f-copyright__dom">
+                    <span>
+                      Uxaction© {new Date().getFullYear()}, All Rights Reserved
+                    </span>
                   </div>
                 </div>
-                <div className="col-md-7">
-                  <div className="f-copyright__text text-md-end mb-30">
-                    <span>{copyright_text}</span>
+                <div className="col-lg-8 col-md-8 col-12">
+                  <div className="f-copyright__list f-bottom-list">
+                    <ul className="d-flex align-items-center">
+                      {footer_bottom.map((item, i) => (
+                        <li key={i}>
+                          <Link href={item.link}>{item.name}</Link>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -165,4 +218,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterTwo;

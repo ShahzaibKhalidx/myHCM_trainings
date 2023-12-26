@@ -5,31 +5,28 @@ import React from "react";
 const choose_data_3 = [
   {
     id: 1,
-    title: "Increasing Your Learning Skills",
+    title: "Learn Abundantly",
     des: (
       <>
-        Holisticly parallel task diverse architectures after top-line
-        applications. Competently facilitate end.
+        Unlock endless knowledge with expert-led programs, ensuring you stay ahead in MyHCM excellence and continuous growth.
       </>
     ),
   },
   {
     id: 2,
-    title: "High Quality Video & Audio Classes",
+    title: "Take Decisive Actions",
     des: (
       <>
-        Holisticly parallel task diverse architectures after top-line
-        applications. Competently facilitate end.
+        Empower decision-making through practical, impactful choices in your career and organization.
       </>
     ),
   },
   {
     id: 3,
-    title: "Finish Your Course, Get Certificate",
+    title: "Become Enhanced Version of Yourself",
     des: (
       <>
-        Holisticly parallel task diverse architectures after top-line
-        applications. Competently facilitate end.
+        Transform into a superior professional. Our holistic approach shapes leadersa and fostering personal growth.
       </>
     ),
   },
@@ -37,15 +34,14 @@ const choose_data_3 = [
 
 // choose top data 
 const choose_top_data = {
-    title: "Why You Choose Our E-Pora Online learning",
-    des: <> Competently facilitate end-to-end testing procedure before
-    customized applications. Interactively coordinate scalable.</>
+    title: "Why Choose MyHCM Training Services",
+    des: <> Benefit from the knowledge of seasoned industry professionals who understand the nuances of your sector.</>
 }
 
 const { title , des} = choose_top_data
 
 
-const ChooseArea = () => {
+const ChooseAreaThree = () => {
   return (
     <>
       <section
@@ -89,7 +85,7 @@ const ChooseArea = () => {
             </div>
             <div className="col-xl-7 col-lg-6 col-md-12">
               <div className="tp-choose-img tp-big-bg mb-50">
-                <img src="/assets/img/bg/choose-3-bg-01.png" alt="choose-img" />
+                <img src="/assets/img/bg/ilus.png" alt="choose-img" />
               </div>
             </div>
           </div>
@@ -99,4 +95,4 @@ const ChooseArea = () => {
   );
 };
 
-export default ChooseArea;
+export default ChooseAreaThree;

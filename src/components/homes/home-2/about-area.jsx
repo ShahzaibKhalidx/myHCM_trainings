@@ -7,10 +7,10 @@ const about_two_bg ={
     img_1: "/assets/img/about/about-2-img.png",
     img_2: "/assets/img/about/about-2-shape.png",
     img_3: "/assets/img/about/shape-2-img.png",
-    title: "Explore Thousands of Creative Classes.",
-    des: <> Dramatically supply transparent deliverables beforese
-    backward comp internal or "organic" sources. Comp
-    transparent leverage other.</>
+    title: "MyHCM Training Services.",
+    des: <> Elevate your business efficiency and innovation with us by 
+    empowering seamless and transformative solutions that optimize processes,
+    foster growth and drive sustainable success.</>
 }
 
 const {img_1, img_2, img_3, title, des} = about_two_bg

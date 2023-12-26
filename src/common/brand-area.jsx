@@ -52,6 +52,7 @@ const BrandArea = ({ style_2, style_3, style_1, style_about }) => {
               <div className="col-lg-12">
                 <div className="section-title mb-65 text-center">
                   <h2 className="tp-section-title mb-20">Our Key Supporters</h2>
+                  <p>Our commitment to serving clients has propelled us to new heights, allowing us to make a meaningful impact on a global scale. We take pride in the journey we've undertaken, and we look forward to continuing to facilitate positive transformations for our clients in the years to come.</p>
                 </div>
               </div>
             </div>

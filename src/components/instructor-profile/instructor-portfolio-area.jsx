@@ -10,29 +10,34 @@ const instructor_portfolio_data = [
   {
     id: 6,
     img: "/assets/img/bg/instruc-in-06.jpg",
-    name: "Esther Howard",
+    name: "Shahrukh Nadeem",
     total_class: "35",
     total_st: "291",
     title: "Instructor",
     sub_title:
-      "UX/UI Designer, Chemical Engineer, Youtuber, Life Style Blogger",
+      "Creatorpreneur | Trainer | Teacher | Author | Speaker | Startup CEO",
     followers: "35,600",
     following: "135",
     job_title: "Lead UX Engineer",
     phone: "+00 365 9852 65",
-    email: "epora@mail.com",
-    experiences_year: "12+ Years",
+    email: "shahrukh@myhcm.pk",
+    experiences_year: "15+ Years",
     skill_level: "Pro Level",
     language: "English",
     biography: (
       <>
         <p>
-          Synergistically foster 24/7 leadership rather than scalable platforms.
-          Conveniently visualize installed base products before interactive
-          results. Collaboratively restore corporate experiences and open-source
-          applications. Proactively mesh cooperative growth strategies for
-          covalent opportunities. Competently create efficient markets through
-          best-of-breed potentialities.
+          Shahrukh is a dreamer, pragmatist, reformist and an entrepreneur
+          who is driven by certain ideals around which he has aligned his
+          professional and personal commitments in life. He has been part
+          of the industry for 15 years now where he has led several entrepreneurial
+          initiatives and business units. He is an "Expert Generalist"
+          where his forte lies in Business Strategy, Channels development,
+          Market Planning, Research, Product Development and Entrepreneurship
+          . Over the course of last 15 years; he has proven track record of leading
+          teams successfully, implementing organizational developmental plans,
+          enhancing operations, launching new technology products and
+          strategizing on key business enhancement activities.
         </p>
         <p>
           Compellingly exploit B2B vortals with emerging total linkage.
@@ -50,28 +55,28 @@ const instructor_portfolio_data = [
 
 // counter data 
 const counter_data = [
-   {
-     id: 1,
-     icon: "fi fi-rr-user",
-     count_number: 276,
-     thousand: "K",
-     title: "Worldwide Students",
-   },
-   {
-     id: 2,
-     icon: "fi fi-rr-document",
-     count_number: 35,
-     thousand: "",
-     title: "Professional Courses",
-   },
-   {
-     id: 3,
-     icon: "fi fi-rr-star",
-     count_number: 407,
-     thousand: "K",
-     title: "Beautiful Review",
-   },
- ];
+  {
+    id: 1,
+    icon: "fi fi-rr-user",
+    count_number: 143,
+    thousand: "K",
+    title: "Subscribers",
+  },
+  {
+    id: 2,
+    icon: "fi fi-rr-document",
+    count_number: 15,
+    thousand: "Y",
+    title: "Experience",
+  },
+  {
+    id: 3,
+    icon: "fi fi-rr-star",
+    count_number: 407,
+    thousand: "K",
+    title: "Reviews",
+  },
+];
 
 const InstructorPortfolioArea = () => {
   return (
@@ -87,21 +92,20 @@ const InstructorPortfolioArea = () => {
               <div className="instruc-sidebar mb-40">
                 <div className="isntruc-side-thumb mb-30">
                   <img
-                    src="/assets/img/bg/instruc-sibedar-thumb-01.jpg"
+                    src="/assets/img/bg/instructor.jpg"
                     alt="instructor-thumb"
                   />
                 </div>
                 <div className="instructor-sidebar-widget">
                   <div className="isntruc-side-content text-center">
                     <h4 className="side-instructor-title mb-15">
-                      Emilia Williamson
+                      Shahrukh Nadeem
                     </h4>
                     <p>
-                      UX/UI Designer, Chemical Engineer, Youtuber, Life Style
-                      Blogger
+                     Creatorpreneur | Trainer | Teacher | Author | Speaker | Startup CEO
                     </p>
                   </div>
-                  <div className="instruc-follower d-flex align-items-center justify-content-center mb-25">
+                  {/* <div className="instruc-follower d-flex align-items-center justify-content-center mb-25">
                     <div className="ins-followers">
                       <h4>35,600</h4>
                       <span>Followers</span>
@@ -110,9 +114,9 @@ const InstructorPortfolioArea = () => {
                       <h4>135</h4>
                       <span>Following</span>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="instruc-side-btn text-center mb-40">
-                    <Link className="ins-btn" href="#">
+                    <Link className="ins-btn" href="https://www.linkedin.com/in/shahrukh-nadeem-74774246/">
                       Follow +
                     </Link>
                   </div>
@@ -120,27 +124,19 @@ const InstructorPortfolioArea = () => {
                     <ul>
                       <li>
                         <i className="fi fi-rr-briefcase"></i>{" "}
-                        <label>Job Title</label> <span>Lead UX Engineer</span>
-                      </li>
-                      <li>
-                        <i className="fi fi-rr-phone-call"></i>{" "}
-                        <label>Phone</label> <span>+00 365 9852 65</span>
+                        <label>Job Title</label> <span>CEO, MyWater</span>
                       </li>
                       <li>
                         <i className="fi fi-rr-envelope"></i>{" "}
-                        <label>Email</label> <span>epora@mail.com</span>
+                        <label>Email</label> <span>shahrukh@myhcm.pk</span>
                       </li>
                       <li>
                         <i className="fi fi-rr-time-forward"></i>{" "}
-                        <label>Experiences</label> <span>12+ Years</span>
+                        <label>Experiences</label> <span>15+ Years</span>
                       </li>
                       <li>
                         <i className="fi fi-rs-time-check"></i>{" "}
-                        <label>Skill Level</label> <span>Pro Level</span>
-                      </li>
-                      <li>
-                        <i className="fi fi-br-comments"></i>{" "}
-                        <label>Language</label> <span>English</span>
+                        <label>Skill Level</label> <span>Professional</span>
                       </li>
                     </ul>
                   </div>
@@ -149,11 +145,11 @@ const InstructorPortfolioArea = () => {
                     <Link href="#">
                       <i className="fa-brands fa-facebook-f"></i>
                     </Link>
-                    <Link href="#">
+                    <Link href="https://twitter.com/shahrukhNadeem1">
                       <i className="fa-brands fa-twitter"></i>
                     </Link>
-                    <Link href="#">
-                      <i className="fa-brands fa-instagram"></i>
+                    <Link href="linkedin.com/in/shahrukh-nadeem-74774246">
+                      <i className="fa-brands fa-linkedin"></i>
                     </Link>
                     <Link href="#">
                       <i className="fa-brands fa-youtube"></i>
@@ -167,47 +163,45 @@ const InstructorPortfolioArea = () => {
                 <div className="instruc-biography mb-50">
                   <h4 className="ins-bio-title mb-30">Biography</h4>
                   <p>
-                    Synergistically foster 24/7 leadership rather than scalable
-                    platforms. Conveniently visualize installed base products
-                    before interactive results. Collaboratively restore
-                    corporate experiences and open-source applications.
-                    Proactively mesh cooperative growth strategies for covalent
-                    opportunities. Competently create efficient markets through
-                    best-of-breed potentialities.
+                    Shahrukh is a dreamer, pragmatist, reformist and an entrepreneur
+                    who is driven by certain ideals around which he has aligned his
+                    professional and personal commitments in life. He has been part
+                    of the industry for 15 years now where he has led several entrepreneurial
+                    initiatives and business units. He is an "Expert Generalist"
+                    where his forte lies in Business Strategy, Channels development,
+                    Market Planning, Research, Product Development and Entrepreneurship.
+
                   </p>
                   <p>
-                    Compellingly exploit B2B vortals with emerging total
-                    linkage. Appropriately pursue strategic leadership whe
-                    intermandated ideas. Proactively revolutionize interoperable
-                    "outside the box" thinking with fully researched innovation.
-                    Dramatically facilitate exceptional architectures and
-                    bricks-and-clicks data. Progressively genera extensible
-                    e-services for.
+                    Over the course of last 15 years; he has proven track record of leading
+                    teams successfully, implementing organizational developmental plans,
+                    enhancing operations, launching new technology products and
+                    strategizing on key business enhancement activities.
                   </p>
                 </div>
                 <div className="instruc-statics mb-20">
                   <div className="row">
 
-                     {
-                        counter_data.map((item, i) =>                         
+                    {
+                      counter_data.map((item, i) =>
                         <div key={i} className="col-xl-4 col-lg-6 col-md-4">
-                      <div className="isntruc-tp-counter mb-30">
-                        <h4 className="isntruc-tp-counter__title p-relative">
-                          <span className="counter">
-                          <Count
-                          add_style={true}
-                          number={item.count_number}
-                          text={item.thousand}
-                          style_3={true}
-                        />                          
-                           </span>
-                        </h4>
-                        <p>{item.title}</p>
-                      </div>
-                    </div>
-                        )
-                     }
-                    
+                          <div className="isntruc-tp-counter mb-30">
+                            <h4 className="isntruc-tp-counter__title p-relative">
+                              <span className="counter">
+                                <Count
+                                  add_style={true}
+                                  number={item.count_number}
+                                  text={item.thousand}
+                                  style_3={true}
+                                />
+                              </span>
+                            </h4>
+                            <p>{item.title}</p>
+                          </div>
+                        </div>
+                      )
+                    }
+
                   </div>
                 </div>
                 <div className="instructor-tp-course">

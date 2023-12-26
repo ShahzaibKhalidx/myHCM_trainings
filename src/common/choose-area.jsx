@@ -3,11 +3,12 @@ import React from "react";
 
 // choose data 
 const choose_data = {
-title: "Why Choose Us",
-sub_title: "Why You Choose Our E-Pora Online learning",
-des: <>Dramatically supply transparent deliverables before & you
-backward comp internal or "organic" sources.</>,
-  experiences_years: "23",
+title: "Founder",
+sub_title: "Meet Our Founder",
+des: <>Shahrukh Nadeem is an "Expert Generalist" where his forte lies in Business 
+   Strategy, Channels development, Market Planning, Research, Product 
+   Development and Entrepreneurship.</>,
+  experiences_years: "15",
 
 
 }
@@ -16,13 +17,13 @@ const {title,sub_title, des, experiences_years} = choose_data
 // choose list data
 const choose_list_data = [
   {
-    list: "Increasing Your Learning Skills",
+    list: "Creatorpreneur",
   },
   {
-    list: "High Quality Video  & Audio Classes",
+    list: "Teacher | Trainer | Author",
   },
   {
-    list: "Finish Your Course, Get Certificate",
+    list: "Startup CEO",
   },
 ];
 const ChooseArea = ({style_about, style_2}) => {
@@ -60,15 +61,15 @@ const ChooseArea = ({style_about, style_2}) => {
                   </ul>
                 </div>
                 <div className="choose-btn">
-                  <Link href="/about" className="tp-btn">
-                    More Details
+                  <Link href="/instructor-profile" className="tp-btn">
+                    Know More
                   </Link>
                 </div>
               </div>
             </div>
             <div className="col-xl-7 col-lg-6 col-md-12">
               <div className="tp-choose-img tp-choose-img-2 p-relative mb-30 mr-50 text-end">
-                <img src="/assets/img/bg/choose-2-img.jpg" alt="choose-img" />
+                <img src="/assets/img/bg/founder_2.png" alt="choose-img" />
                 <div className="tpchoose-img-text tp-chose-shape d-none d-md-block">
                   <ul>
                     <li>

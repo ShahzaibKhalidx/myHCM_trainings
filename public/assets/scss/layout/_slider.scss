@@ -6,15 +6,15 @@
 
 .slider-bg-height {
     @include background;
-    min-height: 850px;
+    min-height: 950px;
     @media #{$lg} {
         min-height: 767px;
     }
     @media #{$md} {
-        min-height: 600px;
+        min-height: 700px;
     }
     @media #{$xs} {
-        min-height: 560px;
+        min-height: 760px;
     }
 }
 .slider-arrow {
@@ -111,7 +111,7 @@
             border-radius: 5px; 
             display: block; 
             z-index: 2;
-            color: var(--tp-common-white);
+            color: var(--tp-heading-primary);
             & span {
                 margin-bottom: 5px;
                 display: block;
@@ -122,7 +122,7 @@
         & li:nth-child(1){
             right: 675px;
             top: 240px;
-            background-color: #9B51E0;
+            background-color: #f9f9f9;
             @media #{$xxl} {
                 right: 475px;
             }
@@ -136,7 +136,7 @@
         & li:nth-child(2){
             bottom: 115px;
             right: 735px;
-            background-color: #FF6652;
+            background-color: #F9f9f9;
             @media #{$xl} {
                 bottom: 315px;
                 right: 120px;
@@ -149,7 +149,7 @@
         & li:nth-child(3){
             bottom: 150px;
             right: 300px;
-            background-color:#F2C94C;
+            background-color:#F9f9f9;
         }
     }
 }
