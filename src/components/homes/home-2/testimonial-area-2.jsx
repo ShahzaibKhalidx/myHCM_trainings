@@ -5,48 +5,85 @@ import Slider from "react-slick";
 const testimonial_data_2 = [
   {
     id: 1,
-    name: "Wade Warren",
-    img: "/assets/img/icon/test-avata--1.png",
+    name: "Kantar",
+    img: "/assets/img/icon/4.png",
     title: "UX/UI Designer",
     des: (
       <>
-        Phosfluorescently aggregate bleeding-edge channels rather than global
-        mindshare. Monotonectally enable enterprise wide strategic theme areas
-        for worldwide initiatives.
+        "Transformative and practical –elevated my skills to new heights."
       </>
     ),
   },
   {
     id: 2,
-    name: "Guy Hawkins",
-    img: "/assets/img/icon/test-avata--2.png",
+    name: "My Cart",
+    img: "/assets/img/icon/8.png",
     title: "Software Engineer",
     des: (
       <>
-        Phosfluorescently aggregate bleeding-edge channels rather than global
-        mindshare. Monotonectally enable enterprise wide strategic theme areas
-        for worldwide initiatives.
+        "Incredible team-building impact —our productivity soared.”
       </>
     ),
   },
   {
     id: 3,
-    name: "Courtney Henry",
-    img: "/assets/img/icon/test-avata--2.png",
+    name: "Zephyr Power Limited",
+    img: "/assets/img/icon/5.png",
     title: "Sr. UX/UI Designer",
     des: (
       <>
-        Phosfluorescently aggregate bleeding-edge channels rather than global
-        mindshare. Monotonectally enable enterprise wide strategic theme areas
-        for worldwide initiatives.
+        "I wanted to express my sincere gratitude for arranging the Advance
+        Excel training. Your efforts and dedication to providing valuable
+        learning experiences are truly commendable. I appreciate the opportunity
+        to enhance my skills in such a crucial area."
       </>
     ),
   },
+  {
+    id: 4,
+    name: "My Water",
+    img: "/assets/img/icon/10.png",
+    title: "Sr. UX/UI Designer",
+    des: (
+      <>
+        "Thoroughly impressed with the hands-on approach. The training at MyHCM Training Services not only enhanced my skills but also boosted my confidence in applying this in my real life.
+      </>
+    ),
+  },
+  // {
+  //   id: 5,
+  //   name: "Zephyr Power Limited",
+  //   img: "/assets/img/icon/test-avata--2.png",
+  //   title: "Sr. UX/UI Designer",
+  //   des: (
+  //     <>
+  //       "I wanted to express my sincere gratitude for arranging the Advance
+  //       Excel training. Your efforts and dedication to providing valuable
+  //       learning experiences are truly commendable. I appreciate the opportunity
+  //       to enhance my skills in such a crucial area."
+  //     </>
+  //   ),
+  // },
+  // {
+  //   id: 3,
+  //   name: "Zephyr Power Limited",
+  //   img: "/assets/img/icon/test-avata--2.png",
+  //   title: "Sr. UX/UI Designer",
+  //   des: (
+  //     <>
+  //       "I wanted to express my sincere gratitude for arranging the Advance
+  //       Excel training. Your efforts and dedication to providing valuable
+  //       learning experiences are truly commendable. I appreciate the opportunity
+  //       to enhance my skills in such a crucial area."
+  //     </>
+  //   ),
+  // },
 ];
 
 //   testimonial setting
 const setting = {
   infinite: true,
+  autoplay: true,
   slidesToShow: 2,
   slidesToScroll: 1,
   arrows: false,
@@ -89,7 +126,7 @@ const setting = {
     },
   ],
 };
-const TestimonialAreaTwo = ({style_about}) => {
+const TestimonialAreaTwo = ({ style_about }) => {
   const sliderRef = useRef(null);
 
   return (
@@ -104,13 +141,13 @@ const TestimonialAreaTwo = ({style_about}) => {
             <div className="col-lg-6 col-md-8">
               <div className="section-title mb-35">
                 <span className="tp-sub-title-box mb-15">Testimonial</span>
-                <h2 className="tp-section-title mb-20">4700+ Happy Students</h2>
+                <h2 className="tp-section-title mb-20">A Legacy of Satisfied Clients</h2>
               </div>
             </div>
             <div className="col-6 col-md-4">
               <div className="tp-section-arrow d-flex justify-content-md-end">
 
-              <button
+                <button
                   type="button"
                   onClick={() => sliderRef?.current?.slickPrev()}
                   className="slick-prev slick-arrow"
@@ -145,7 +182,7 @@ const TestimonialAreaTwo = ({style_about}) => {
                       </div>
                     </div>
                     <p>
-                     {item.des}
+                      {item.des}
                     </p>
                     <div className="tp-testi__rating mb-5">
                       <ul className="d-flex align-items-center">

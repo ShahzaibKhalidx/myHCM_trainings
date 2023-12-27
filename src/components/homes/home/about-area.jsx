@@ -22,16 +22,20 @@ const shape_img = [
 
 // about info
 const about_info = {
-    img_1: "/assets/img/about/about-img.png",
-    img_2: "/assets/img/about/about-shape-01.png",
-    img_3: "/assets/img/about/about-shape-02.png",
-    about_title: "About Our Courses",
-    sub_title:"Explore Thousands of Creative Classes.",
-    des: <>Dramatically supply transparent deliverables beforese backward comp internal or "organic" sources. Comp  transparent leverage other.</>,
-    about_btn: "Read More"
+  img_1: "/assets/img/about/1.png",
+  img_2: "/assets/img/about/3.png",
+  img_3: "/assets/img/about/2.png",
+  about_title: "About Us",
+  sub_title: "Crafting Excellence Together.",
+  des: <>At MyHCM Training Services, we specialize in elevating the skills and strategies
+    of today's professionals. Our expert-led trainings are
+    designed not just to inform, but to transform. With a focus on practical knowledge and
+    real-world applications, we are committed to nurturing the leaders of tomorrow. Join
+    us in shaping a future where every professional is a pillar of expertise and innovation.</>,
+  about_btn: "Read More"
 }
 
-const {img_1, img_2, img_3, about_title, sub_title, des, about_btn} = about_info
+const { img_1, img_2, img_3, about_title, sub_title, des, about_btn } = about_info
 
 const AboutArea = () => {
   return (
@@ -55,7 +59,7 @@ const AboutArea = () => {
                       className={item.cls}
                     />
                   ))}
-                
+
                 </div>
                 <div className="tp-about-shape  d-none d-xl-block">
                   <img
@@ -76,14 +80,14 @@ const AboutArea = () => {
                 <div className="section-title mb-55">
                   <span className="tp-sub-title mb-20">{about_title}</span>
                   <h2 className="tp-section-title mb-15">
-                   {sub_title}
+                    {sub_title}
                   </h2>
                   <p>
                     {des}
                   </p>
                 </div>
                 <div className="about-btn">
-                  <Link href="/about" className="tp-btn">
+                  <Link href="#" className="tp-btn">
                     {about_btn}
                   </Link>
                 </div>

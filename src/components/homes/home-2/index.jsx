@@ -22,13 +22,13 @@ const HomeTwo = () => {
       <FeatureArea />
       <AboutArea />
       <ChooseAreaThree />
-      <CategoryArea />
-      <CourseArea />
-      <VideoArea />
+      {/* <CategoryArea /> */}
+      {/* <CourseArea /> */}
+      {/* <VideoArea /> */}
+      <TestimonialAreaTwo />
       <CounterArea style_counter={true} />
       <ChooseArea style_2={true} />
-      <InstructorArea style_2={true} />
-      <TestimonialAreaTwo />
+      {/* <InstructorArea style_2={true} /> */}
       <SuitableArea  style_2={true} />
       <BlogArea />
       <BrandArea style_1={true} />

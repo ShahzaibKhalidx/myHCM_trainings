@@ -7,20 +7,20 @@ const suitable_data = [
     id: 1,
     title: (
       <>
-        Do you want to <span>Learn</span> here?
+        Upcoming <span>Workshops</span>?
       </>
     ),
-    des: <>Dramatically supply transpa deliverables before & you.</>,
+    des: <>Get early access to our latest workshops.</>,
     img: "/assets/img/bg/suit-bg-01.png",
   },
   {
     id: 2,
     title: (
       <>
-        Do you want to <span>Learn</span> here?
+        Upcoming <span>Events</span>?
       </>
     ),
-    des: <>Dramatically supply transpa deliverables before & you.</>,
+    des: <>Receive updates on our upcoming events.</>,
     img: "/assets/img/bg/suit-bg-02.png",
   },
 ];
@@ -46,7 +46,7 @@ const SuitableArea = ({ style_2}) => {
               <div className="section-title mb-60">
                 <span className="tp-sub-title mb-25">Join With Us</span>
                 <h2 className="tp-section-title">
-                  Which One is Suitable For You?
+                  Be the First One To Know!
                 </h2>
               </div>
             </div>
@@ -64,7 +64,7 @@ const SuitableArea = ({ style_2}) => {
                     <p>{item.des}</p>
                     <div className="tp-suit__btn pt-5">
                       <Link href="/contact" className="tp-border-btn">
-                        Join Now
+                        Subscribe
                       </Link>
                     </div>
                   </div>

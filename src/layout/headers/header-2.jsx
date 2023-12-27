@@ -85,8 +85,8 @@ const {sticky} = useSticky()
                           </Link>
                         </li> */}
                         <li>
-                          <Link href="https://www.facebook.com/profile.php?id=61553825309948" className="d-none d-md-block">
-                            <i className="fa-brands fa-facebook-f"></i>
+                          <Link href="https://wa.me/+923268048283" className="d-none d-md-block">
+                            <i className="fa-brands fa-whatsapp"></i>
                           </Link>
                         </li>
                         <li>

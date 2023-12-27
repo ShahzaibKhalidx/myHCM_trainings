@@ -25,6 +25,9 @@ const choose_list_data = [
   {
     list: "Startup CEO",
   },
+  {
+    list: "Speaker",
+  },
 ];
 const ChooseArea = ({style_about, style_2}) => {
   return (
@@ -69,7 +72,7 @@ const ChooseArea = ({style_about, style_2}) => {
             </div>
             <div className="col-xl-7 col-lg-6 col-md-12">
               <div className="tp-choose-img tp-choose-img-2 p-relative mb-30 mr-50 text-end">
-                <img src="/assets/img/bg/founder_2.png" alt="choose-img" />
+                <img src="/assets/img/bg/founder1.png" alt="choose-img" />
                 <div className="tpchoose-img-text tp-chose-shape d-none d-md-block">
                   <ul>
                     <li>
@@ -78,7 +81,7 @@ const ChooseArea = ({style_about, style_2}) => {
                     </li>
                     <li>
                       <i className="fa-light fa-check"></i>
-                      <p>Fully Safe & Secure</p>
+                      <p>Strategic Visionary</p>
                     </li>
                     <li>
                       <p>Total Students</p>

@@ -43,28 +43,28 @@ const footer_data = [
 // social_links
 const social_links = [
   {
-    link: "http://facebook.com",
+    link: "https://wa.me/+923268048283",
     target: "_blank",
-    icon: "fab fa-facebook-f",
+    icon: "fab fa-whatsapp",
     name: "Facebook",
   },
   {
-    link: "https://www.youtube.com/",
+    link: "https://www.linkedin.com/showcase/myhcm-taas/",
     target: "_blank",
-    icon: "fab fa-youtube",
+    icon: "fab fa-linkedin",
     name: "Youtube",
   },
   {
-    link: "https://www.basketball.com/",
+    link: "https://www.facebook.com/profile.php?id=61553825309948",
     target: "_blank",
-    icon: "fa-brands fa-instagram",
+    icon: "fa-brands fa-facebook-f",
     name: "Instagram",
   },
 
   {
-    link: "http://whatsapp.com",
+    link: "https://www.instagram.com/myhcm_training/",
     target: "_blank",
-    icon: "fa-brands fa-linkedin",
+    icon: "fa-brands fa-instagram",
     name: "Twitter",
   },
 ];
@@ -109,13 +109,12 @@ const Footer = () => {
                 <div className="col-xl-4 col-lg-6 col-md-8">
                   <div className="footer-widget footer-col-4  mb-50">
                     <div className="footer-widget__text mb-35">
-                      <h3 className="footer-widget__title">Support</h3>
+                      <h3 className="footer-widget__title">MyHCM Training Services</h3>
                     </div>
                     <p>
-                      Be the first one to know about discounts, offers and
-                      events. Unsubscribe whenever you like.
+                    Elevate your business efficiency and innovation with us by empowering seamless and transformative solutions that optimize processes, foster growth and drive sustainable success.
                     </p>
-                    <div className="footer-widget__f-newsletter mb-40">
+                    {/* <div className="footer-widget__f-newsletter mb-40">
                       <form  onSubmit={(e) => e.preventDefault()}>
                         <span>
                           <i className="icon_mail_alt"></i>
@@ -125,7 +124,7 @@ const Footer = () => {
                           Subscribe Now
                         </button>
                       </form>
-                    </div>
+                    </div> */}
                     <div className="footer-widget__social d-flex align-items-center">
                       {social_links.map((link, i) => (
                         <a href={link.link} target={link.target} key={i}>

@@ -33,7 +33,7 @@ const slider_data = [
 
 // slider setting
 const setting = {
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 4000,
   dots: false,
   fade: true,
@@ -92,7 +92,7 @@ const HeroSlider = () => {
                             {item.title}
                           </h2>
                           <div className="slider-btn">
-                            <Link className="tp-btn mr-5" href="/subscribe">
+                            <Link className="tp-btn mr-5" href="/subscribe" style={{backgroundColor: "#f9f9f9", color:"#243D97"}}>
                               Subscribe
                             </Link> {" "}
                             <Link
