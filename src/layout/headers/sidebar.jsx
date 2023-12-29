@@ -20,25 +20,25 @@ const Sidebar = ({ isActive, setIsActive }) => {
         <div className="sidebar-info">
           <h4 className="mb-15">Contact Info</h4>
           <ul className="side_circle">
-            <li>27 Division St, New York</li>
+            <li>1D، 28, Sector 30 Korangi Industrial Area, Karachi, Karachi City, Sindh</li>
             <li>
-              <a href="tel:123456789">+1 800 123 456 78</a>
+              <a href="tel:123456789">+92 3268 048 283</a>
             </li>
             <li>
-              <a href="mailto:epora@example.com">epora@example.com</a>
+              <a href="mailto:trainingservices@myhcm.pk">trainingservices@myhcm.pk</a>
             </li>
           </ul>
           <div className="side-social">
-            <a href="#">
+            <a href="https://www.facebook.com/profile.php?id=61553825309948">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="#">
-              <i className="fab fa-twitter"></i>
+            <a href="https://wa.me/+923268048283">
+              <i className="fab fa-whatsapp"></i>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/showcase/myhcm-taas/">
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/myhcm_training/">
               <i className="fab fa-instagram"></i>
             </a>
           </div>

@@ -10,9 +10,9 @@ const slider_data = [
     title: "Transforming Today, Empowering Tomorrow.",
     titleColor: "#f9f9f9",
     total_courses: "3.5k",
-    courses_text: "Free Pro Courses",
+    courses_text: "Professional Trainings",
     students: "235k",
-    st_text: "Worldwide Students",
+    st_text: "Worldwide Clients",
     review: "4.7",
     review_text: "Worldwide Review",
   },
@@ -20,12 +20,12 @@ const slider_data = [
     id: 2,
     bg_img: "/assets/img/slider/3.png",
     slider_text: "MyHCM training Services",
-    title: "Transforming Today, Empowering Tomorrow.",
+    title: "Leading The Way In Learning Services.",
     titleColor: "#f9f9f9",
     total_courses: "3.5k",
-    courses_text: "Free Pro Courses",
+    courses_text: "Professional Trainings",
     students: "235k",
-    st_text: "Worldwide Students",
+    st_text: "Worldwide Clients",
     review: "4.7",
     review_text: "Worldwide Review",
   },
@@ -88,7 +88,7 @@ const HeroSlider = () => {
                           <span className="slider-text mb-15">
                             {item.slider_text}
                           </span>
-                          <h2 className="slider-title mb-65" style={{ color: item.titleColor, fontSize: "52px" }}>
+                          <h2 className="slider-title mb-65" style={{ color: item.titleColor}}>
                             {item.title}
                           </h2>
                           <div className="slider-btn">

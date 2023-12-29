@@ -65,10 +65,13 @@ const {sticky} = useSticky()
                     <div className="header__search d-none d-lg-block">
                       <form onSubmit={e => e.preventDefault()}>
                         <div className="header__search-input">
-                          <button className="header__search-btn">
+                          {/* <button className="header__search-btn">
                             <i className="fa-regular fa-magnifying-glass"></i>
                           </button>
-                          <input type="text" placeholder="Search Trainings" />
+                          <input type="text" placeholder="Search Trainings" /> */}
+                          <Link href="https://myhcm.pk" target="_blank">
+                          <img width={"100px"} src="/assets/img/logo/myhcmlogo.png" alt="logo" />
+                          </Link>
                         </div>
                       </form>
                     </div>
@@ -81,7 +84,7 @@ const {sticky} = useSticky()
                         </li>
                         {/* <li>
                           <Link href="https://www.linkedin.com/showcase/myhcm-taas/" className="d-none d-md-block">
-                            <i className="fa-brands fa-linkedin"></i>
+                            <img src="/assets/img/logo/myhcmlogo.png" alt="logo" />
                           </Link>
                         </li> */}
                         <li>
