@@ -75,12 +75,12 @@ const menu_data = [
   {
     id: 4,
     title: "Blog",
-    link: "#",
+    link: "/blog",
   },
   {
     id: 5,
     title: "Contact",
-    link: "#",
+    link: "/contact",
   },
 ];
 export default menu_data;

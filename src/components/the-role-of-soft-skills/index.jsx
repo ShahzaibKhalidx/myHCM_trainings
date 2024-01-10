@@ -2,17 +2,16 @@
 import React from "react";
 import Breadcrumb from "../bredcrumb/breadcrumb";
 import CounterArea from "../homes/home-3/counter-area";
-import PostboxBlogDetails from "./postbox-blog-details";
-import Blog_1 from "./the_future_of_work_adapting_training_services_to_changing_trends";
+import PostboxBlogDetails3 from "./the_role_of_soft_skills_training_in_professional_development";
 
-const BlogDetails = () => {
+const BlogDetails3 = () => {
   return (
     <>
       <Breadcrumb title="Blog Details" subtitle="Blog Details" isDbbl="Blog" />
-      <Blog_1 />
+      <PostboxBlogDetails3 />
       <CounterArea />
     </>
   );
 };
 
-export default BlogDetails;
+export default BlogDetails3;

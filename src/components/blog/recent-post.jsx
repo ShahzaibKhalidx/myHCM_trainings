@@ -6,20 +6,23 @@ const recent_post = [
   {
     id: 1,
     img: "/assets/img/blog/sidebar/blog-sm-1.jpg",
-    date: "21 Jan 2022",
-    title: "Seamlessly monetize centa material bleeding.",
+    date: "December. 2023",
+    title: "The Future of Work: Adapting Training Services to Changing Trends.",
+    src: "/blog-details"
   },
   {
     id: 2,
     img: "/assets/img/blog/sidebar/blog-sm-2.jpg",
-    date: "12 February. 2022",
-    title: "How often should you schedule professional",
+    date: "January. 2024",
+    title: "How Customized Training Programs Boost Employee Engagement",
+    src: "/blog-details-2"
   },
   {
     id: 3,
     img: "/assets/img/blog/sidebar/blog-sm-3.jpg",
-    date: "14 January. 2022",
-    title: "How to keep your institue and home Safe",
+    date: "January. 2024",
+    title: "The Role of Soft Skills Training in Professional Development",
+    src: "/blog-details-3"
   },
 ];
 
@@ -36,13 +39,13 @@ const RecentPost = () => {
                 className="rc__post mb-20 d-flex align-items-center"
               >
                 <div className="rc__post-thumb">
-                  <Link href="/blog-details">
+                  <Link href={item.src}>
                     <img src={item.img} alt="blog-sidebar" />
                   </Link>
                 </div>
                 <div className="rc__post-content">
                   <h3 className="rc__post-title">
-                    <Link href="/blog-details">{item.title}</Link>
+                    <Link href={item.src}>{item.title}</Link>
                   </h3>
                   <div className="rc__meta">
                     <span>{item.date}</span>

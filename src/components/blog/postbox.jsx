@@ -36,7 +36,7 @@ const Postbox = () => {
                   >
                     {item.img && (
                       <div className="postbox__thumb w-img mb-30">
-                        <Link href="/blog-details">
+                        <Link href={item.src}>
                           <img src={item?.img} alt="" />
                         </Link>
                       </div>
@@ -48,7 +48,7 @@ const Postbox = () => {
                           key={i}
                           className="postbox__thumb postbox__video p-relative w-img mb-30"
                         >
-                          <Link href="/blog-details">
+                          <Link href={item.src}>
                             <img src={v_link.video_tum} alt="" />
                           </Link>
 
@@ -116,20 +116,20 @@ const Postbox = () => {
                         </span>
                       </div>
                       <h3 className="postbox__title">
-                        <Link href="/blog-details">{item.title}</Link>
+                        <Link href={item.src}>{item.title}</Link>
                       </h3>
                       <div className="postbox__text">
                         <p>{item.des}</p>
                       </div>
                       <div className="postbox__read-more">
-                        <Link href="/blog-details" className="tp-btn">
+                        <Link href={item.src} className="tp-btn">
                           read more
                         </Link>
                       </div>
                     </div>
                   </article>
                 ))}
-                <div className="basic-pagination">
+                {/* <div className="basic-pagination">
                   <nav>
                     <ul>
                       <li>
@@ -153,7 +153,7 @@ const Postbox = () => {
                       </li>
                     </ul>
                   </nav>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-xxl-4 col-xl-4 col-lg-5 col-md-12">

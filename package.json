@@ -1,5 +1,5 @@
 {
-  "name": "epora-next-js",
+  "name": "myhcm-training",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "@next/font": "13.1.6",
     "bootstrap": "^5.2.3",
     "next": "13.1.6",

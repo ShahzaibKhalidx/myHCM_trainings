@@ -3,12 +3,12 @@ import React from "react";
 
 //  tags data
 const tags = [
-  { name: "IT Solution" },
-  { name: "Digital Marketing" },
-  { name: "Software Training" },
-  { name: "Art & Design" },
-  { name: "Photography" },
-  { name: "Music" },
+  { name: "Trainings" },
+  { name: "Consultant" },
+  { name: "Communication" },
+  { name: "Technology" },
+  { name: "Learning" },
+  { name: "Corporate" },
 ];
 
 const Tags = () => {

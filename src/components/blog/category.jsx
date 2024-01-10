@@ -8,7 +8,7 @@ const category_data = [
     blog_item: "14",
   },
   {
-    category: "Cleaning",
+    category: "Training",
     blog_item: "19",
   },
   {
@@ -16,11 +16,11 @@ const category_data = [
     blog_item: "21",
   },
   {
-    category: "Creative",
+    category: "Soft Skills",
     blog_item: "27",
   },
   {
-    category: "Technology",
+    category: "Professional Development",
     blog_item: "35",
   },
 ];
@@ -35,7 +35,7 @@ const Category = () => {
             {category_data.map((item, i) => (
               <li key={i}>
                 <Link href="/blog">
-                  {item.category} <span>({item.blog_item})</span>
+                  {item.category} <span></span>
                 </Link>
               </li>
             ))}

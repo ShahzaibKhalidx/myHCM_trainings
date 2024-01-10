@@ -4,79 +4,61 @@ const blog_page_data = [
     id: 1,
     img: "/assets/img/blog/blog-in-1.jpg",
     slider_img: false,
-    user: "JAMIL RAYHAN",
-    date: " Dec 28, 2023",
+    src: "/blog-details",
+    user: "ADMIN",
+    date: " December, 2023",
     comments: "(04)Coments",
     views: "1,526 views",
     video: [],
-    title: "How to Succeed in the aws Certified Developer Associate Exam",
+    title: "The Future of Work: Adapting Training Services to Changing Trends",
     des: (
       <>
-        Compellingly exploit B2B vortals with emerging total linkage.
-        Appropriately pursue strategic leadership whe intermandated ideas.
-        Proactively revolutionize interoperable "outside the box" thinking with
-        fully researched innovation. Dramatically facilitate exceptional
-        architectures and bricks-and-clicks data. Progressively genera
-        extensible e-services for.
+        As we step into a dynamic era of work, driven by technological advancements
+        and evolving market landscapes, the demand for adaptable and skilled professionals
+        is greater than ever. Organizations are faced with the challenge of preparing
+        their workforce for the future, making the role of training services pivotal
+        in navigating this transformative journey.
       </>
     ),
   },
   {
     id: 2,
-    img: "",
+    img: "/assets/img/blog/blog-in-5.jpg",
     slider_img: false,
-    user: "JAMIL",
-    date: " Dec 25, 2023",
+    src: "/blog-details-2",
+    user: "ADMIN",
+    date: " January, 2024",
     comments: "(04)Coments",
     views: "1,526 views",
     video: [
-      {
-        video_tum: "/assets/img/blog/blog-in-5.jpg",
-        videoId: "UPBMG5EYydo",
-      },
     ],
     title:
-      "Four Ways to Fullfill Your Task For Makes Parents Happy and Healthy",
+      "How Customized Training Programs Boost Employee Engagement",
     des: (
       <>
-        Compellingly exploit B2B vortals with emerging total linkage.
-        Appropriately pursue strategic leadership whe intermandated ideas.
-        Proactively revolutionize interoperable "outside the box" thinking with
-        fully researched innovation. Dramatically facilitate exceptional
-        architectures and bricks-and-clicks data. Progressively genera
-        extensible e-services for.
+        Employee engagement is the heartbeat of a thriving workplace, and customized training programs have emerged as a powerful catalyst for nurturing this vital connection. Gone are the days of one-size-fits-all training approaches; the future lies in tailoring learning experiences to meet individual needs, ultimately fostering a more engaged and motivated workforce.
       </>
     ),
   },
   {
     id: 3,
-    img: "",
-    slider_img: [
-      {
-        img: "/assets/img/blog/blog-in-4.jpg",
-      },
-      {
-        img: "/assets/img/blog/blog-in-5.jpg",
-      },
-      {
-        img: "/assets/img/blog/blog-in-6.jpg",
-      },
-    ],
-    user: "RAYHAN",
-    date: " Dec 24, 2023",
+    img: "/assets/img/blog/blog-in-6.jpg",
+    slider_img: false,
+    src: "/blog-details-3",
+    user: "ADMIN",
+    date: " January, 2024",
     comments: "(04)Coments",
     views: "1,526 views",
     video: [],
-    title: "How to Understand Your Home Task and More Efficiently",
+    title: "The Role of Soft Skills Training in Professional Development",
     des: (
       <>
-        Compellingly exploit B2B vortals with emerging total linkage. Appropte
-        pursu strategic leadership whe intermandated ideas. Lorem ipsum dolor
-        sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur.
+        In the fast-paced and interconnected world of today's workplace, the importance
+        of soft skills in professional development cannot be overstated. Beyond technical
+        expertise, employers increasingly recognize the pivotal role that interpersonal
+        abilities play in fostering a collaborative, communicative, and adaptable workforce.
+        Let's delve into the significance of soft skills training in shaping well-rounded
+        professionals
       </>
     ),
   },
