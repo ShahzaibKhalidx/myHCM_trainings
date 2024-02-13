@@ -1,6 +1,7 @@
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick";
+import FormModal from "@/src/modals/FormModal";
 
 const slider_data = [
   {
@@ -34,7 +35,7 @@ const slider_data = [
 // slider setting
 const setting = {
   autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 6000,
   dots: false,
   fade: true,
   arrows: false,
@@ -51,10 +52,9 @@ const setting = {
   ],
 };
 
-
 const HeroSlider = () => {
   const sliderRef = useRef(null);
-
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
       <section className="slider-area">
@@ -88,12 +88,15 @@ const HeroSlider = () => {
                           <span className="slider-text mb-15">
                             {item.slider_text}
                           </span>
-                          <h2 className="slider-title mb-65" style={{ color: item.titleColor}}>
+                          <h2 className="slider-title mb-65" style={{ color: item.titleColor }}>
                             {item.title}
                           </h2>
                           <div className="slider-btn">
-                            <Link className="tp-btn mr-5" href="/subscribe" style={{backgroundColor: "#f9f9f9", color:"#243D97"}}>
-                              Subscribe
+                            <Link
+                              onClick={() => setShowModal(true)}
+                              className="tp-btn mr-5"
+                              href="" style={{ backgroundColor: "#f9f9f9", color: "#243D97" }}>
+                              Enroll Now
                             </Link> {" "}
                             <Link
                               className="tp-s-border-btn"
@@ -104,6 +107,7 @@ const HeroSlider = () => {
                           </div>
                         </div>
                       </div>
+                      <FormModal showModal={showModal} setShowModal={setShowModal} />
                       <div className="col-xl-5 col-lg-5 d-none d-lg-block">
                         <div className="slider-info-list">
                           <ul>
@@ -117,7 +121,7 @@ const HeroSlider = () => {
                               <span>
                                 {item.review} <i className="fi fi-ss-star"></i>
                               </span>
-                               {item.review_text}
+                              {item.review_text}
                             </li>
                           </ul>
                         </div>
@@ -129,6 +133,7 @@ const HeroSlider = () => {
             ))}
           </Slider>
         </div>
+        
       </section>
     </>
   );

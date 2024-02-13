@@ -1,15 +1,15 @@
 const answer_question_data = [
   {
     id: 1,
-    question: "Do I receive anything after I complete a course?",
+    question: "Module 1: Professional Etiquette and Communication",
     answer: (
       <>
-        Proactively initiate corporate vortals via bricks-and-clicks
-        relationships. Dynamically envisioneer cutting-edge paradigms via
-        client-centered relationships. Globally repurpose backward-compatible
-        growth strategies and fully tested e-services. Energistically promote
-        stand-alone models whereas effective solutions. Quickly target low-risk
-        high-yield e-markets via web-enabled networks.
+        1.1 Introduction to Professionalism
+        The importance of professionalism in education
+        Building a positive professional image <br/>
+        1.2 Effective Communication Skills
+        Verbal and non-verbal communication
+        Communication strategies for effective teaching
       </>
     ),
     accordion_id: "headingOne",
@@ -24,7 +24,7 @@ const answer_question_data = [
     question: "Is there any way to preview a course?",
     answer: (
       <>
-       Proactively initiate corporate vortals via bricks-and-clicks
+        Proactively initiate corporate vortals via bricks-and-clicks
         relationships. Dynamically envisioneer cutting-edge paradigms via
         client-centered relationships. Globally repurpose backward-compatible
         growth strategies and fully tested e-services. Energistically promote

@@ -10,13 +10,13 @@ const NavMenu = () => {
           <li key={item.id} className={item.sub_menus?.length ? "has-dropdown" : ""}>
             <Link href={item.link}>{item.title}</Link>
             {item.sub_menus && item.sub_menus.length > 0 && (
-            <ul className="submenu">
-              {item.sub_menus.map((sub, i) => (
-                <li key={i}>
-                  <Link href={sub.link}>{sub.title}</Link>
-                </li>
-              ))}
-            </ul>
+              <ul className="submenu">
+                {item.sub_menus.map((sub, i) => (
+                  <li key={i}>
+                    <Link href={sub.link}>{sub.title}</Link>
+                  </li>
+                ))}
+              </ul>
             )}
           </li>
         ))}

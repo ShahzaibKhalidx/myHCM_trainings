@@ -15,9 +15,6 @@ const SEO = ({ pageTitle }) => (
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
       <link rel="icon" href="/favicon.png" />
-      <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-      <script src="https://formspree.io/js/formbutton-v1.0.min.js" defer></script>
-      <script src="https://formspree.io/js/formbutton-v1.0.4.min.js" defer></script>
     </Head>
   </>
 );

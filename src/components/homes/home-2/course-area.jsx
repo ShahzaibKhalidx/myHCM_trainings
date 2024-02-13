@@ -15,16 +15,16 @@ const CourseArea = () => {
           <div className="row justify-content-center align-items-center">
             <div className="col-xl-6 col-lg-8 col-md-8">
               <div className="section-title mb-65">
-                <span className="tp-sub-title-box mb-15">Our Courses</span>
+                <span className="tp-sub-title-box mb-15">Our Workshops</span>
                 <h2 className="tp-section-title mb-20">
-                  Explore Popular Courses
+                  Upcoming Workshops
                 </h2>
               </div>
             </div>
             <div className="col-xl-6 col-lg-4 col-md-4">
               <div className="tp-course-btn mb-40 d-flex justify-content-md-end">
                 <a className="tp-btn" href="#">
-                  Browse All Courses
+                  Browse All Events
                 </a>
               </div>
             </div>
@@ -74,9 +74,9 @@ const CourseArea = () => {
                           </ul>
                         </div>
                         <div className="tpcourse__category c-price-list d-flex align-items-center justify-content-between">
-                          <h5 className="tpcourse__course-price c-price-pac">
-                            ${item.course_price}
-                          </h5>
+                          {/* <h5 className="tpcourse__course-price c-price-pac">
+                            {item.course_price}
+                          </h5> */}
                           <ul className="tpcourse__price-list d-flex align-items-center">
                             <li>
                               <Link href="/course-details">

@@ -59,18 +59,18 @@ const menu_data = [
   // },
   {
     id: 1,
-    title: "About",
-    link: "#",
+    title: "Home",
+    link: "/",
   },
   {
     id: 2,
     title: "Upcoming Events",
-    link: "#",
+    link: "workshop",
   },
   {
     id: 3,
     title: "MyHCM Finishing School",
-    link: "#",
+    link: "/finishing-school",
   },
   {
     id: 4,

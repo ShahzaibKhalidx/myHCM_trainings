@@ -8,9 +8,9 @@ import CourseDetailsArea from "./course-details-area";
 const CourseDetails = () => {
   return (
     <>
-      <Breadcrumb title="Course Details" subtitle="Course Details" isDbbl="Course" />
+      <Breadcrumb title="Workshop Details" subtitle="Workshop Details" isDbbl="Workshop" />
       <CourseDetailsArea />
-      <CourseArea />
+      {/* <CourseArea /> */}
       <CounterArea />
     </>
   );
